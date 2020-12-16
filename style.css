@@ -1,0 +1,44 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+    font-style: bold;
+    color: #FFFEF8;
+
+    background: -webkit-linear-gradient(88deg, rgb(80, 24, 70), rgb(35, 57, 104));
+    background: linear-gradient(88deg, rgb(80, 24, 70), rgb(35, 57, 104));
+
+}
+
+p{
+    font-size: 30px;
+    text-align: center;
+}
+
+h1{
+    font-size: 60px;
+    text-align: center;
+}
+
+.form_{
+   
+    width: 700px;
+    margin: auto;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.form-api{
+    align-content: center;
+}
+
+input{
+    border: 1px rgba(20, 20, 41, 0.616);
+    border-radius: 10px;
+}
+
+.form-button{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
+    border:none;
+    
+}

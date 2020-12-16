@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API with bouman</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<main>
+    <h1 class="titre"> ImmoEliza </h1>
+    <p class="goal"> 
+        Prédisez le prix de votre futur maison. Répondez le plus exactement possible ! 
+    </p>
+
+    <hr>
+
+    <div class ="form_"> 
+    
+        <h3>Les informations essentiels à complèter pour notre recherche : </h3><br>
+
+    <form action="" method="POST" class="form-API">
+
+            <div class="form-api">
+                <label for="area">Entrez le périmètre: </label>
+                <input type="number" name="area" id="area"  required>
+            </div>
+
+            <div class="form-api">
+                <label for="type">Entrez le type de bien : </label>
+                <input type="checkbox" name="property-type" class="type" value="APARTMENT" > appartement </input>
+                <input type="checkbox" name="property-type" class="type" value="HOUSE" > maison</input>
+                <input type="checkbox" name="property-type" class="type" value="OTHERS" > autres </input>
+            </div>
+
+            <div class="form-api">
+                <label for="room">Entez le nombre de pièces : </label>
+                <input type="number" name="rooms-number" id="rooms-number" >
+            </div>
+
+            <div class="form-api">
+                <label for="code">Entrez le code postal : </label>
+                <input type="text" name="zip-code" id="zip-code" >
+            </div> <br>
+        <hr>
+
+    <h3> Les options de la maison : </h3>
+
+            <div class="form-api">
+                <label for="garden"> Dites nous s'il y a une jardin : </label>
+                <input type="radio"  name="garden"  > oui </input>
+                <input type="radio"  name="garden" checked> non </input>
+             </div>
+
+            <div class="form-api">
+                <label for="equipped-kitchen"> Dites nous si la cuisine est équipée : </label>
+                <input type="radio"  name="equipped-kitchen"  > oui </input>
+                <input type="radio"  name="equipped-kitchen" checked > non </input>
+            </div>
+
+            <div class="form-api">
+                <label for="terrace"> Dites nous s'il y a une terrace : </label>
+                <input type="radio"  name="terrace" id="terraceOui" > oui </input>
+                <input type="radio"  name="terrace" id="terraceNon" checked> non </input>
+            </div> <br>
+
+            <div class="form-button">
+                <input type="submit" name="submit" id="price" value="Faire une estimation !">
+            </div>
+
+        </form>
+
+    </div>
+
+    <div class="price-container"> </div>
+</main>
+    
+    
+<script src="app.js"></script>
+</body>
+</html>
